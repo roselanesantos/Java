@@ -1,9 +1,9 @@
 public class PersonMain {
     public static void main(String[] args) {
-        // Criando uma instância de Person com um nome e idade
+        // Instance with a name and age
         Person person = new Person("Roselane Santos",36 );
 
-        // Imprimindo os detalhes da pessoa
+        // Print the person's details
         System.out.println("Person Details:");
         System.out.println("Name: " + person.getName());
         System.out.println("Age: " + person.getAge());

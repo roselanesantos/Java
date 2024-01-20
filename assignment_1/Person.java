@@ -1,5 +1,3 @@
-import java.util.Objects;
-
 public class Person {
     private String name;
     private int age;
@@ -20,7 +18,7 @@ public class Person {
         }
     }
 
-    // validation for age
+    // validation for age 
     public void setAge(int age) {
         
         if (isValidAge(age)) {
@@ -30,12 +28,12 @@ public class Person {
         }
     }
 
-    // Validation  name
+    // Validation  name, the name cannot be empty
     private boolean isValidName(String name) {
         return name != null && !name.trim().isEmpty();
     }
 
-    // Validation age
+    // Validation age of 0 to 120 years
     private boolean isValidAge(int age) {
         return age >= 0 && age <= 120; //age range
     }
